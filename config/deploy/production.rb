@@ -7,9 +7,10 @@
 # server 'example.com', user: 'deploy', roles: %w{app web}, other_property: :other_value
 # server 'db.example.com', user: 'deploy', roles: %w{db}
 
-set :application, 'balh-production'
-
-
+set :application, 'blah-production'
+set :ruby_version, '2.3.0'
+set :branch, 'master'
+set :domain, "simons.capella.uberspace.de"
 # role-based syntax
 # ==================
 
@@ -50,13 +51,12 @@ set :application, 'balh-production'
 #
 # The server-based syntax can be used to override options:
 # ------------------------------------
-# server 'example.com',
-#   user: 'user_name',
-#   roles: %w{web app},
-#   ssh_options: {
-#     user: 'user_name', # overrides user setting above
-#     keys: %w(/home/user_name/.ssh/id_rsa),
-#     forward_agent: false,
-#     auth_methods: %w(publickey password)
-#     # password: 'please use keys'
-#   }
+ server 'capella.uberspace.de',
+   user: 'simons',
+   roles: %w{web app cron db},
+   primary: true,
+   ssh_options: {
+     keys: %w{~/.ssh/authorized_keys},
+         forward_agent: true,
+         auth_methods: %w(publickey)
+   }
