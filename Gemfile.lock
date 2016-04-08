@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/mediatainment/capistrano-uberspace.git
+  remote: git://github.com/tessi/capistrano-uberspace.git
   revision: bdc38e7f6c88afe6d36ef592eb1ffe49daf3c581
   specs:
     capistrano-uberspace (1.1.1)

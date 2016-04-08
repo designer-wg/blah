@@ -43,7 +43,7 @@ group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
   gem 'capistrano-rails'
-  gem 'capistrano-uberspace', github: 'mediatainment/capistrano-uberspace'
+  gem 'capistrano-uberspace', github: 'tessi/capistrano-uberspace'
   gem 'capistrano-bundler', require: false
   gem 'capistrano-rails',   require: false
   gem 'capistrano-rbenv',   require: false
