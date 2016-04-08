@@ -36,13 +36,12 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 end
-
+gem 'net-ssh'
 gem 'passenger', group: :production
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
-  gem 'capistrano-rails'
   gem 'capistrano-uberspace', github: 'tessi/capistrano-uberspace'
   gem 'capistrano-bundler', require: false
   gem 'capistrano-rails',   require: false
