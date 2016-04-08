@@ -3,14 +3,13 @@ lock '3.4.0'
 
 set :ruby_version, fetch(:ruby_version, "2.3.0")
 
-set :application, 'balh'
+set :application, 'blah'
 set :repo_url, 'git@github.com:designer-wg/blah.git'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, '/var/www/my_app_name'
 
 # Default value for :scm is :git
 # set :scm, :git
