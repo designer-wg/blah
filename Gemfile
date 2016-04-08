@@ -44,6 +44,10 @@ group :development do
   gem 'web-console', '~> 2.0'
   gem 'capistrano-rails'
   gem 'capistrano-uberspace', github: 'mediatainment/capistrano-uberspace'
+  gem 'capistrano-bundler', require: false
+  gem 'capistrano-rails',   require: false
+  gem 'capistrano-rbenv',   require: false
+  gem 'capistrano3-puma',   require: false
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
